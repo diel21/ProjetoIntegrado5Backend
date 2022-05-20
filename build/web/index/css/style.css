@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+/*---------- CAMPO DE BUSCA --------*/
+
+input[type="text"] {
+  width: 100px;
+  -webkit-transition: width 0.8s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  position: absolute;
+  right: 240px;
+  top: 23px;
+  background-color: #e0eeee;
+  border: solid 2px #5f9ea0;
+  border-radius: 10px;
+  width: 300px;
+  height: 32px;
+}
+
+input[type="text"]:focus {
+  width: 25%;
+}
+
+/*---------- HEADER ----------*/
+
+.cabecalho {
+  width: auto;
+  height: 10vh;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #067490;
+  color: #fff;
+}
+
+.headerLogo {
+  width: 150px;
+  width: 100px;
+  display: block;
+}
+.headerLogo img {
+  width: 50px;
+  height: 50px;
+}
+.headerTitulo {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+.headerTitulo h1 {
+  font: bold 40px "Roboto", sans-serif;
+}
+.headerTitulo span {
+  width: 100px;
+  display: inline-block;
+  background-color: #062c47;
+}
+
+.headerMenu {
+  width: 200px;
+  height: auto;
+  display: block;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+.headerMenu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.headerMenu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.headerMenu a:hover {
+  border-bottom: solid 2px white;
+}
+
+/*---------- HEADER2 (SUB-MENU) -----------*/
+
+body,
+.menu,
+.sub-menu {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: -10px;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.menu,
+.sub-menu {
+  list-style: none;
+  background: #1d94af;
+}
+.sub-menu {
+  background: #1d94af;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.menu li {
+  position: relative;
+}
+.menu > li {
+  float: left;
+}
+.menu > li:hover {
+  background: #062c47;
+}
+.menu li:hover > .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+}
+
+.sub-menu li:hover {
+  background: #062c47;
+}
+
+.sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+/*---------- MAIN ----------*/
+
+main {
+  width: 100%;
+  display: flex;
+  margin: 20px auto 0px auto;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/*---------- CARD ----------*/
+
+.card-container {
+  flex-basis: 270px;
+  display: table;
+  margin: 60px 60px 20px 60px;
+}
+
+.card {
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.212);
+  box-sizing: border-box;
+}
+
+.card .card-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+.card-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+.card-info {
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.card-info h2 {
+  font: normal 28px "Roboto", sans-serif;
+  line-height: 120%;
+}
+
+.card-info p {
+  margin-top: 5px;
+  font: normal 16px "Roboto", sans-serif;
+  line-height: 150%;
+}
+
+.card-footer {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.card-footer .btn {
+  width: auto;
+  height: 40px;
+  padding: 10px 30px 0 30px;
+  margin: 12px 50px 0 50px;
+  display: inline-block;
+  background: #067490;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 150%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.card-footer .btn:hover {
+  background-color: #062841;
+  cursor: pointer;
+}
+
+/*---------- FOOTER ----------*/
+.rodape {
+  width: 100%;
+  display: table;
+  padding: 40px 0;
+}
+
+.rodape h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 10px 0;
+}
+.rodape ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.rodape ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8s;
+}
+
+.rodape ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.rodape ul li a:hover {
+  opacity: 1;
+  color: #1d94af;
+}
+
+.rodape .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  color: #1d94af;
+}
+
+/*---------- BODY ----------*/
+
+body {
+  background-color: #fdf8ef;
+}
