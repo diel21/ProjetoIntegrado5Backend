@@ -17,14 +17,17 @@
     <body>
         
         <%
-            FuncionarioDTO objFuncionario = new FuncionarioDTO();
+           try{ FuncionarioDTO objFuncionario = new FuncionarioDTO();
             objFuncionario.setNome(request.getParameter("nome"));
             objFuncionario.setCpf(request.getParameter("cpf"));
             objFuncionario.setSetor(request.getParameter("setor"));
             objFuncionario.setSenha(request.getParameter("senha"));
             
             FuncionarioDAO DAOFuncionario = new FuncionarioDAO();
-            DAOFuncionario.CadastrarFuncionario(objFuncionario);   
+            DAOFuncionario.CadastrarFuncionario(objFuncionario);
+            }catch (Exception e){
+            }
+            
         %>
         
     </body>
