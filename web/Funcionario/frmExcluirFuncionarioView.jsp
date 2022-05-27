@@ -16,19 +16,19 @@
             
             <label>Id: </label>
             <input type = "text" name = "id"
-                   value="<%=request.getParameter("id")%>">
+                   value="<%=request.getParameter("id")%>" readonly>
             <label>Nome: </label>
             <input type = "text" name = "nome"
-                   value="<%=request.getParameter("nome")%>">
+                   value="<%=request.getParameter("nome")%>" readonly>
             <label>CPF: </label>
             <input type = "text" name = "cpf"
-                   value="<%=request.getParameter("cpf")%>">
+                   value="<%=request.getParameter("cpf")%>" readonly>
             <label>Senha: </label>
             <input type = "text" name = "senha"
-                   value="<%=request.getParameter("senha")%>">
+                   value="<%=request.getParameter("senha")%>" readonly>
             <label>Setor: </label>
             <input type = "text" name = "setor"
-                   value="<%=request.getParameter("setor")%>">
+                   value="<%=request.getParameter("setor")%>" readonly>
             <button type="submit">Excluir</button>
             
         </form>

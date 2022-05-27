@@ -30,7 +30,7 @@
                     +"&cpf="+lista.get(num).getCpf()+"&senha="+lista.get(num).getSenha()+"&setor="+lista.get(num).getSetor()+"'>Excluir</a>");
                     
                      out.print("<a href='frmAlterarFuncionarioView.jsp?id="+lista.get(num).getId()+"&nome= "+lista.get(num).getNome()
-                    +"&cpf="+lista.get(num).getCpf()+"&senha="+lista.get(num).getSenha()+"&setor="+lista.get(num).getSetor()+"'>Alterar</a>"+"<br>"
+                    +"&cpf="+lista.get(num).getCpf()+"&senha="+lista.get(num).getSenha()+"&setor="+lista.get(num).getSetor()+"'> Alterar Senha</a>"+"<br>"
                     );
                     
                     

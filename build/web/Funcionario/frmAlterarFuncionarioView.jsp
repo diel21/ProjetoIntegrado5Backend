@@ -16,20 +16,13 @@
             
             <label>Id: </label>
             <input type = "text" name = "id"
-                   value="<%=request.getParameter("id")%>">
-            <label>Nome: </label>
-            <input type = "text" name = "nome"
-                   value="<%=request.getParameter("nome")%>">
-            <label>CPF: </label>
-            <input type = "text" name = "cpf"
-                   value="<%=request.getParameter("cpf")%>">
+                   value="<%=request.getParameter("id")%>" readonly>
+            
             <label>Senha: </label>
             <input type = "text" name = "senha"
                    value="<%=request.getParameter("senha")%>">
-            <label>Setor: </label>
-            <input type = "text" name = "setor"
-                   value="<%=request.getParameter("setor")%>">
-            <button type="submit">Alterar</button>
+
+            <button type="submit">Alterar Senha</button>
             
         </form>
     </body>

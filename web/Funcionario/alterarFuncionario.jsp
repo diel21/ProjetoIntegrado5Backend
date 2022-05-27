@@ -18,6 +18,7 @@
         <%
            FuncionarioDTO objFuncionario = new FuncionarioDTO();
             objFuncionario.setId(Integer.parseInt(request.getParameter("id")));
+            objFuncionario.setSenha(request.getParameter("senha"));
             
             FuncionarioDAO DAOFuncionario = new FuncionarioDAO();
             DAOFuncionario.AlterarFuncionario(objFuncionario);

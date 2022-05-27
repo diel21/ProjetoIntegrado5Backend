@@ -1,6 +1,6 @@
 <%-- 
-    Document   : frmAlterarFuncionarioView
-    Created on : 26 de mai. de 2022, 15:36:27
+    Document   : frmExcluirCliente
+    Created on : 27 de mai. de 2022, 11:59:28
     Author     : Adiel
 --%>
 
@@ -12,18 +12,16 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action ="alterarFuncionario.jsp" method="POST">
+         <form action ="excluirCliente.jsp" method="POST">
             
-            <label>Id: </label>
+            <label>ID: </label>
             <input type = "text" name = "id"
                    value="<%=request.getParameter("id")%>" readonly>
+            <label>Nome: </label>
+            <input type = "text" name = "nome"
+                   value="<%=request.getParameter("nome")%>" readonly>
             
-            <label>Senha: </label>
-            <input type = "text" name = "senha"
-                   value="<%=request.getParameter("senha")%>">
-
-            <button type="submit">Alterar Senha</button>
-            
+            <button type="submit">Excluir</button>
         </form>
     </body>
 </html>
